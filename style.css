@@ -1,0 +1,432 @@
+/*----------------------------------------------------*/
+/*BASIC SETUP */
+/*----------------------------------------------------*/
+
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  overflow-x: hidden;
+}
+
+html,
+body {
+  background-color: rgb(35,37,51);
+  font-weight: 400; 
+  color: ; 
+  width: 100vw; 
+}
+
+
+/* font-family: 'Varela Round', sans-serif;
+  font-family: 'Yeseva One', cursive; */
+
+
+  /*----------------------------------------------------*/
+/* HEADINGS */
+/*----------------------------------------------------*/
+h1, h2, h3, h4, h5 {
+  font-family: 'Yeseva One', cursive;
+  color: rgb(239,167,101);
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+  padding: 10px 50px 10px 0;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 32px;
+  color: rgb(225, 225, 225);
+  text-align: center;
+}
+
+h5 {
+  font-size: 28px;
+  color: rgb(225, 225, 225);
+  text-align: center;
+
+}
+
+/*----------------------------------------------------*/
+/* BUTTON */
+/*----------------------------------------------------*/
+
+.btn {
+  font-family: 'Varela Round', sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 19px 29px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(239,167,101);
+}
+
+/*----------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)) ,url("resources/hero-image.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  height: 100vh;
+  padding: 0 10px;
+  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 110px;
+  margin: 0 35px;
+}
+
+nav > div:first-of-type > a {
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+}
+
+ul {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  width: 433px;
+}
+
+li {
+  float: left;
+}
+
+li > a {  
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 0 30px;
+}
+
+li > a:hover {
+  color: rgb(239,167,101);
+  transition: color 0.8s ease;
+}
+
+.active {
+  color: rgb(239,167,101);
+}
+
+.hero-text-box {
+  width: 660px;
+  height: 500px;
+  margin: 140px 0 0 150px;
+}
+
+
+/*----------------------------------------------------*/
+/* HEADINGS */
+/*----------------------------------------------------*/
+.section_about {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: center;
+  align-self: auto;
+  align-content: space-between;
+  background-color: rgb(17,20,36);
+  height: auto;
+  padding: 50px 30px;
+}
+
+.section_about > div:first-of-type {
+  flex: 0 1 600px;
+  overflow-y: hidden;
+}
+
+.section_about > div:first-of-type > h2 {
+  width: 275px;
+  margin-left: 225px;
+}
+
+.section_about > div:first-of-type > div {
+  z-index: 3;
+  width: 500px;
+  height: auto;
+  margin: 100px 0 -40px 45px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.section_about > div:first-of-type > div > img {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-left: 25px;
+}
+
+.section_about > div:first-of-type > div > div {
+  position: absolute;
+  width: 470px;
+  height: 680px;
+  background-color: rgb(245,193,115);
+  top: 25px;
+  left: 0;
+  
+}
+
+.section_about > div:last-of-type {
+  flex: 0 1 600px;
+  padding: 154px 80px 0 100px;
+}
+
+
+
+.section_about > div:last-of-type > p {
+  font-family: 'Varela Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(224, 224, 224);
+  line-height: 25px;
+  padding: 20px 0 159px 0;
+}
+
+/*----------------------------------------------------*/
+/* FEATURED SECTION */
+/*----------------------------------------------------*/
+.section_featured {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: auto;
+  padding: 240px 0 120px 0;
+}
+
+.section_featured h2 {
+  width: 322px;
+  padding-bottom: 20px;
+}
+
+.section_featured > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_featured > div:first-child > div {
+  padding: 80px 80px 80px 50px;
+}
+
+.section_featured > div:last-child {
+  padding-left: 80px;
+}
+
+.section_featured > div:last-child > div {
+  
+}
+
+.section_featured p {
+  font-family: 'Yeseva One', cursive;
+  color: rgb(239,167,101);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  margin: 30px 0 20px 0;
+}
+
+.section_featured > div:first-child > div > p {
+  text-align: right;
+}
+
+.section_featured a {
+  width: 210px;
+}
+
+
+/*----------------------------------------------------*/
+/* STATIC SECTION */
+/*----------------------------------------------------*/
+
+.section_static {
+  background-image: linear-gradient(rgba(20, 16, 1, 0.4), rgba(0, 0, 0, 0.4)), url(resources/static-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 400px;
+}
+
+/*----------------------------------------------------*/
+/* TESTIMONIAL SECTION */
+/*----------------------------------------------------*/
+
+.section_testimonial {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 160px;
+  background-color: rgb(17,20,36);
+}
+
+.client > p {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(224, 224, 224);
+  
+
+}
+
+.client {
+  padding-top: 60px;
+  padding-left: 80px;
+}
+
+.section_testimonial > div:first-of-type > .client {
+  padding-right: 80px;
+  padding-left: 0;
+}
+
+.client > div  {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.client > div > p {
+  font-family: 'Yeseva One', cursive;
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(225, 225, 225);
+  font-style: normal;
+  
+}
+
+.client img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+
+/*----------------------------------------------------*/
+/* WAITING SECTION */
+/*----------------------------------------------------*/
+
+.section_waiting {
+  display: flex;
+  padding: 50px 160px;
+  background-color: rgb(17,20,36);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section_waiting > h4 {
+  margin: 45px 0 32px 0;
+}
+
+.section_waiting > a {
+  margin: auto;
+  
+}
+
+.section_waiting > ul {
+  margin: auto;
+}
+
+/*----------------------------------------------------*/
+/* DETAILS SECTION */
+/*----------------------------------------------------*/
+
+.section_detials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  background-color: rgb(17,20,36);
+  color: rgb(224, 224, 224);
+  padding: 45px 0;
+}
+
+.section_detials > div {
+  width: 450px;
+  text-align: center;
+}
+
+.section_detials a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  margin: 31px 11px;
+}
+
+.section_detials a:hover {
+  color: rgb(239,167,101);
+}
+
+.section_detials p,
+.section_detials pre {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(224, 224, 224);
+  margin: 38px 0 48px 0;
+  line-height: 25px;
+}
+
+
+/*----------------------------------------------------*/
+/* FOOTER */
+/*----------------------------------------------------*/
+
+footer {
+  background-color: rgb(17,20,36);
+  color: rgb(224, 224, 224);
+  text-align: center;
+  padding: 30px 0;
+  
+
+}
+
+
+footer p {
+  font-size: 12px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,200 @@
+/* BIG TABLET TO 1200px (width smaller than the 1140px row)  */
+@media only screen and (max-width:1200px) {
+
+}
+
+/* SMALL TABLET TO BIG TABLET: FROM 767px TO 1023px  */
+
+@media only screen and (max-width: 1024px) {
+  .section_featured {
+    width: 900px;
+  }
+
+  .section_testimonial {
+    padding: 100px 30px;
+  }
+}
+
+/* SMALL PHONES TO SMALL TABLET : FROM 480px TO 767px  */
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 55vh;
+    overflow-y: hidden;
+  }
+
+  header .btn:first-child {
+    display: none;
+  }
+
+  
+  header ul {
+    display: none;
+  }
+
+  .hero-text-box {
+    margin: auto;
+    width: 716px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+  .section_about {
+    flex-direction: column;
+    margin: auto;
+    
+  }
+
+  .section_about > div:first-of-type {
+    
+  }
+
+  .section_about > div:first-of-type > div {
+    z-index: 20;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    
+  }
+
+  .section_about > div:first-of-type > h2,
+  .section_featured h2 {
+    width: auto;
+    margin-left: 30px;
+  }
+
+  .section_about p {
+    font-style: 14px;
+    margin: 20px 0 30px 0;
+    padding: 0;
+  }
+
+  .section_about > div:last-of-type {
+    padding: 50px 0;
+  }
+
+  .section_about > div:last-of-type> p {
+    padding: 0;
+  }
+
+  .section_featured {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  
+
+  .section_featured p {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .section_featured > div:first-child > div > p {
+    text-align: left;
+  }
+  
+  .section_featured > div:first-child > div,
+  .section_featured > div:last-child {
+    padding: 30px;
+    width: 700px;
+  }
+
+  .section_featured .btn {
+    margin-top: 30px;
+  }
+
+  {
+    padding: 30px;
+  }
+
+  .section_testimonial {
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  .client {
+    padding-top: 60px;
+    padding-left: 0;
+  }
+
+}
+
+
+/* SMALL PHONES : FROM 375px TO 480px  */
+@media only screen and (max-width: 481px) {
+  header {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  nav > div:first-of-type > a {
+    font-size: 18px;
+    
+  }
+
+  .hero-text-box {
+    width: 97vw;
+    margin-left: 20px;
+    
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+  
+  .section_featured > div:first-child > div,
+  .section_featured > div:last-child {
+    width: 400px;
+  }
+  
+  .section_detials {
+    flex-wrap: wrap;
+  }
+
+  .section_waiting {
+    padding: 30px;
+  }
+
+}
+
+
+
+/* SMALL PHONES : FROM 0 TO 375px  */
+@media only screen and (max-width: 376px) { 
+  header {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section_waiting ul {
+    font-size: 12px;
+    margin: auto;
+    padding-left: 25px;
+  }
+  
+  .section_waiting li > a {  
+    padding: 0 10px;
+  }
+
+  .section_detials {
+    padding: 30px;
+  }
+
+}
