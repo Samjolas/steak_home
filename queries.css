@@ -196,5 +196,10 @@
   .section_detials {
     padding: 30px;
   }
+  
+  .section_featured > div:first-child > div,
+  .section_featured > div:last-child {
+    width: 375px;
+  }
 
 }
